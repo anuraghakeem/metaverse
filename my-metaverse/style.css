@@ -1,3 +1,19 @@
 body{
   margin: 0;
 }
+
+footer{
+  background: blue;
+  color: aliceblue;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 100vw;
+}
+
+footer a{
+  color: aliceblue;
+}
