@@ -1,6 +1,6 @@
 import * as THREE from "three";
 
-import keyInput from "./keyinput.js";
+import keyInput from "./Keyinput.js";
 import connect from "./Connect.js";
 
 connect.then(() => {
