@@ -3,6 +3,8 @@ class KeyInput {
     this.keys = {};
     window.addEventListener("keydown", this.down.bind(this));
     window.addEventListener("keyup", this.up.bind(this));
+    // window.addEventListener("keyleft", this.up.bind(this));
+    // window.addEventListener("keyright", this.up.bind(this));
   }
 
   isPressed(keyCode) {
@@ -11,12 +13,12 @@ class KeyInput {
   down(e) {
     if (this.keys[e.keyCode]) return;
     this.keys[e.keyCode]= true;
-    // console.log("KeyDown", e.key, e.keyCode);
+    console.log("KeyDown", e.key, e.keyCode);
   }
 
   up(e) {
     this.keys[e.keyCode] = false;
-    // console.log("KeyUp", e.key, e.keyCode);
+    console.log("KeyUp", e.key, e.keyCode);
   }
 }
 
